@@ -12,4 +12,22 @@ def sales_reports(log_file):        #This is a function that takes in the opened
 
 sales_reports(log_file)             #calls the function so that it will run when the file is ran.
 
+
 #EXTRA CREDIT
+
+
+melons_file = open("um-server-01.txt")
+
+
+
+def melon_report(melons_file):
+    for line in melons_file:
+        line = line.rstrip()
+        new_line = line.split(":")
+        new_line = new_line[1].split(" ")
+        melon_count = int(new_line[1])
+        if melon_count > 10:
+            print(line)
+
+
+melon_report(melons_file)
