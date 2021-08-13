@@ -11,3 +11,5 @@ def sales_reports(log_file):        #This is a function that takes in the opened
 
 
 sales_reports(log_file)             #calls the function so that it will run when the file is ran.
+
+#EXTRA CREDIT
